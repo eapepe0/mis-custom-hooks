@@ -1,4 +1,4 @@
-import { todoReducer } from "./../08-useReducer/TodoReducer";
+import { todoReducer } from "./todoReducer";
 import { useEffect , useReducer } from "react";
 
 
@@ -40,23 +40,6 @@ export const useTodos = () =>{
         dispatch(action)
     }
 
-   /*  const todosCount = (todo) =>{
-        console.log(todos)
-        const action = {
-            type :'[TODO] Count Todo',
-            payload : todo,
-        }
-        dispatch(action)
-    }
-    const pendingTodosCount = (todo) =>{
-        console.log(todo)
-        const action = {
-            type : '[TODO] Pending Todo',
-            payload : todo,
-        }
-        dispatch(action)
-    } */
-    
     return {
         todos ,
         handleNewTodo,
